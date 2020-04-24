@@ -1,0 +1,23 @@
+Package: awapi
+Title: Get 12 hour, 5 day weather forecast and historical 24 hour condition for any location using Accuweather.com API.
+Version: 0.0.0.9000
+Authors@R: 
+	person("Tayo", "Ososanya", email = "tayo.ososanya@arcadisgen.com",
+                  role = c("aut", "cre"))
+Description: Get 12 hour, 5 day weather forecast and historical 24 hour condition for any location using Accuweather.com API. Includes metric and imperial temperature converter. 
+	Output from weather forecast and historical conditions also include elevation and post code.
+Depends: R (>= 4.0.0)
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    httr, 
+    jsonlite,
+    dplyr, 
+    lubridate,
+    magrittr
+RoxygenNote: 7.1.0
+Suggests: 
+    knitr,
+    rmarkdown, 
+    tidyverse
