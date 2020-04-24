@@ -38,7 +38,8 @@ aw_check_status_code <- function(lat, lon, apikey = Sys.getenv("awapi_key")){
   # get the location key
   my_url <- paste0("http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=",apikey,"&q=",lat,"%2C",lon)
   raw <- httr::GET(my_url)
-  stat <- as.numeric(status_code(raw))
+  stat <- httr::status_code(raw)
+  stat <- as.numeric(stat)
   
   if(stat > 200){
     stop(paste0('Error ', stat, ':check response error code in "https://apidev.accuweather.com/developers/"'))
