@@ -6,7 +6,7 @@ Authors@R:
                   role = c("aut", "cre"))
 Description: Get 12 hour, 5 day weather forecast and historical 24 hour condition for any location using Accuweather.com API. Includes metric and imperial temperature converter. 
 	Output from weather forecast and historical conditions also include elevation and post code.
-Depends: R (>= 4.0.0)
+Depends: R (>= 3.1.0)
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true

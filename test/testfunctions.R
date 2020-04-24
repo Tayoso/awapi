@@ -1,6 +1,7 @@
 # install from git
-cred <- git2r::cred_user_pass(rstudioapi::askForPassword("username"), 
+cred <- git2r::cred_user_pass(rstudioapi::askForPassword("username"),
                               rstudioapi::askForPassword("Password"))
+
 
 devtools::install_git("https://gitlab.com/tayoso2/awapi.git",credentials = cred)
 devtools::install_git("https://gitlab.com/arcadis-code-repository/arcadisgen/awapi.git",credentials = cred)
@@ -37,3 +38,4 @@ a
 
 b <- C_to_F(29.44444)
 b
+
