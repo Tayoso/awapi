@@ -28,10 +28,25 @@ library(awapi)
     
 You will need an API key to use AccuWeather API. You can register for an API key at [https://developer.accuweather.com](https://developer.accuweather.com).
     
-## Project information
+## Unit testing
 
-### **Status**
-`TESTING`
+### Pre-requisites
+
+R must be installed and `Rscript` should be in the search path.
+
+### Installation
+
+Change into this directory and call `install.sh` for installing the required package(s).
+
+### Running the tests
+
+- open RStudio
+- change your working directory to this directory
+- call `testthat::test_dir('test')`
+
+
+
+## Project Information
 
 ### **Authors**
 * Tayo Ososanya (tayo.ososanya@arcadisgen.com)
