@@ -9,15 +9,12 @@ The [AccuWeather API](https://developer.accuweather.com) offers a free limited t
 
 ### Installation
 
-There are a variety of methods for installing packages directly from gitlab. You may want to research these and find the most appropriate for you. 
+There are a variety of methods for installing packages directly from github. You may want to research these and find the most appropriate for you. 
 
-You can try running the following code from within R Studio (assuming you know your gitlab username and password and your account has access to the repo):
-
-    cred <- git2r::cred_user_pass(rstudioapi::askForPassword("Username"), 
-                                  rstudioapi::askForPassword("Password"))
-                                  
-    devtools::install_git("https://gitlab.com/arcadis-code-repository/arcadisgen/awapi.git", 
-                          credentials = cred)
+```R
+devtools::install_git('git@github.com:tayoso2/awapi.git',
+                      credentials = git2r::cred_ssh_key())
+```
 
 
 Alternatively, you could clone the entire repo and build manually.
@@ -28,6 +25,7 @@ library(awapi)
     
 You will need an API key to use AccuWeather API. You can register for an API key at [https://developer.accuweather.com](https://developer.accuweather.com).
     
+
 ## Unit testing
 
 ### Pre-requisites
