@@ -12,8 +12,11 @@ The [AccuWeather API](https://developer.accuweather.com) offers a free limited t
 There are a variety of methods for installing packages directly from github. You may want to research these and find the most appropriate for you. 
 
 ```R
-devtools::install_git('git@github.com:tayoso2/awapi.git',
-                      credentials = git2r::cred_ssh_key())
+# install devtools libraries from cran
+install.packages("devtools")
+
+# install awapi package
+devtools::install_github("tayoso2/awapi")
 ```
 
 
@@ -31,10 +34,6 @@ You will need an API key to use AccuWeather API. You can register for an API key
 ### Pre-requisites
 
 R must be installed and `Rscript` should be in the search path.
-
-### Installation
-
-Change into this directory and call `install.sh` for installing the required package(s).
 
 ### Running the tests
 

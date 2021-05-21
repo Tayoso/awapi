@@ -1,8 +1,7 @@
 
 
 # install from git ---------------------------------------------------------
-devtools::install_git('git@github.com:tayoso2/awapi.git',
-                      credentials = git2r::cred_ssh_key())
+devtools::install_github("tayoso2/awapi")
 
 
 # load library ----------------------------------------------------------
