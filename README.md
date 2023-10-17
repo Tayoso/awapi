@@ -46,7 +46,7 @@ R must be installed and `Rscript` should be in the search path.
 ## Project Information
 
 ### **Authors**
-* Tayo Ososanya (tayo.ososanya@arcadisgen.com)
+* Tayo Ososanya
 
 ### **Core components**
 * awapi.R - daily forecast, hourly forecast, historical condition, temperature unit converter.
@@ -58,11 +58,4 @@ R must be installed and `Rscript` should be in the search path.
 R, weather, API, AccuWeather, elevation, postcode
 
 --------------------------------------------------------------------------------------
-
-## Copyright and metadata 
-
-### **Copyright** 
-Copyright (c) 2020 Arcadis Nederland B.V. 
-
-Without prior written consent of Arcadis Nederland B.V., this code may not be published or duplicated. 
 
